@@ -1,48 +1,70 @@
-EcoTracker 🌱
+<h1 align="center">EcoTracker 🌱</h1>
 
-EcoTracker is a web application designed to inspire and reward eco-friendly actions. Whether you're looking to adopt a greener lifestyle, participate in sustainability challenges, or compete with others to make an impact, EcoTracker is your go-to platform for driving change.
-🌟 Features
+<p align="center">
+    <b>EcoTracker</b> is a web application designed to inspire and reward eco-friendly actions. Whether you're looking to adopt a greener lifestyle, participate in sustainability challenges, or compete with others to make an impact, EcoTracker is your go-to platform for driving change.
+</p>
 
-    Explore Challenges: Discover a variety of eco-friendly tasks designed to make a real-world impact.
-    Track Progress: Stay motivated by marking challenges as completed and tracking your journey toward sustainability.
-    Earn Points: Complete challenges to earn points and showcase your commitment.
-    Compete on Leaderboards: See where you rank among other eco-champions and aim for the top spot!
-    User Dashboard: Seamlessly manage your activities, view progress, and monitor your impact.
+<hr>
 
-💻 Technologies
+<h2>🌟 Features</h2>
+<ul>
+    <li><b>Explore Challenges:</b> Discover a variety of eco-friendly tasks designed to make a real-world impact.</li>
+    <li><b>Track Progress:</b> Stay motivated by marking challenges as completed and tracking your journey toward sustainability.</li>
+    <li><b>Earn Points:</b> Complete challenges to earn points and showcase your commitment.</li>
+    <li><b>Compete on Leaderboards:</b> See where you rank among other eco-champions and aim for the top spot!</li>
+    <li><b>User Dashboard:</b> Seamlessly manage your activities, view progress, and monitor your impact.</li>
+</ul>
 
-    Frontend: Bootstrap 5 for sleek and responsive design.
-    Backend: Laravel for robust and scalable server-side development.
-    Database: MySQL for efficient data management.
+<hr>
 
-🚀 Getting Started
+<h2>💻 Technologies</h2>
+<ul>
+    <li><b>Frontend:</b> Bootstrap 5 for sleek and responsive design.</li>
+    <li><b>Backend:</b> Laravel for robust and scalable server-side development.</li>
+    <li><b>Database:</b> MySQL for efficient data management.</li>
+</ul>
 
-    Clone the repository:
+<hr>
 
-git clone https://github.com/ME-Massine/EcoTracker.git
-cd EcoTracker
+<h2>🚀 Getting Started</h2>
+<ol>
+    <li>Clone the repository:
+        <pre><code>git clone https://github.com/ME-Massine/EcoTracker.git
+cd EcoTracker</code></pre>
+    </li>
+    <li>Install dependencies:
+        <pre><code>composer install
+npm install</code></pre>
+    </li>
+    <li>Set up your <code>.env</code> file for database configuration.</li>
+    <li>Run migrations and seeders:
+        <pre><code>php artisan migrate --seed</code></pre>
+    </li>
+    <li>Start the local server:
+        <pre><code>php artisan serve</code></pre>
+    </li>
+</ol>
 
-Install dependencies:
+<hr>
 
-composer install
-npm install
+<h2>📖 Usage</h2>
+<ol>
+    <li>Register or log in to your account.</li>
+    <li>Explore and participate in challenges.</li>
+    <li>Track your progress and earn points.</li>
+    <li>Compete with others and climb the leaderboard.</li>
+</ol>
 
-Set up your .env file for database configuration.
-Run migrations and seeders:
+<hr>
 
-php artisan migrate --seed
+<h2>🤝 Contributions</h2>
+<p>
+    Contributions are welcome! Feel free to fork the repository, make enhancements, and submit pull requests.
+</p>
 
-Start the local server:
+<hr>
 
-    php artisan serve
-
-📖 Usage
-
-    Register or log in to your account.
-    Explore and participate in challenges.
-    Track your progress and earn points.
-    Compete with others and climb the leaderboard.
-
-🤝 Contributions
-
-Contributions are welcome! Feel free to fork the repository, make enhancements, and submit pull requests.
+<h2>📜 License</h2>
+<p>
+    This project is licensed under the <b>MIT License</b>.
+</p>
