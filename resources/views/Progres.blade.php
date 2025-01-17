@@ -11,6 +11,7 @@
 
 <body>
 
+    <!-- Formulaire pour marquer les défis comme terminés -->
     <form action="{{ route('progresTermine') }}" method="post">
         @csrf
 
@@ -18,10 +19,12 @@
             <div class="d-flex justify-content-between align-items-center mb-4">
                 <h1 class="text-center mb-0">Progrès</h1>
 
+                <!-- Lien pour retourner à la page d'accueil -->
                 <a href="/Home" class="btn btn-outline-primary">Retour à la page d'accueil</a>
             </div>
 
 
+            <!-- Tableau des défis -->
             <div class="table-responsive">
                 <table class="table table-bordered table-hover">
                     <thead class="table-dark">
@@ -41,6 +44,7 @@
                             <td>{{ $user_challenge['challenge']->points }}</td>
                             <td>{{ $user_challenge['status'] }}</td>
                             @if ($user_challenge['status'] == 'En Progres')
+                            <!-- Case à cocher pour marquer le défi comme terminé -->
                             <td>
                                 <input type="checkbox" name="termine[]" value="{{ $user_challenge['challenge']->id }}">
                             </td>
@@ -56,6 +60,7 @@
         </div>
         @if (!empty($User_c))
         <div class="container mt-4">
+            <!-- Bouton pour soumettre les défis terminés -->
             <button type="submit" class="btn btn-primary">Marquer comme terminé</button>
         </div>
         @endif

@@ -63,26 +63,31 @@
 <body>
     <div class="login-card text-center">
         <h2 class="mb-4">Welcome Back</h2>
+        <!-- Formulaire de connexion -->
         <form method="post" action="/Login">
             @csrf
+            <!-- Champ pour l'email -->
             <div class="mb-3">
                 <label for="email" class="form-label">Email</label>
                 <input type="email" class="form-control" name="email" id="email" required>
             </div>
+            <!-- Champ pour le mot de passe -->
             <div class="mb-3">
                 <label for="password" class="form-label">Password</label>
                 <input type="password" class="form-control" name="password" id="password" required>
             </div>
+            <!-- Affichage des erreurs -->
             @if(isset($error))
             <div class="alert alert-danger mt-3" role="alert">
                 {{ $error }}
             </div>
             @endif
+            <!-- Bouton de soumission -->
             <button type="submit" class="btn btn-primary w-100 mt-3">Login</button>
         </form>
+        <!-- Lien vers la page d'inscription -->
         <p class="mt-3">Don't have an account? <a href="/Register" class="register-link">Register</a></p>
     </div>
-
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>

@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    <!-- Métadonnées et liens CSS -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eco-Challenges Tracker</title>
@@ -11,6 +12,7 @@
 
 <body>
 
+    <!-- Barre de navigation -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
         <div class="container">
             <a class="navbar-brand" href="/Home">Eco-Challenges Tracker</a>
@@ -46,6 +48,7 @@
     </nav>
 
 
+    <!-- Section de bienvenue -->
     <div class="container text-center mt-5">
         <h1 class="display-4 fw-bold">Bienvenue sur Eco-Challenges Tracker</h1>
         <p class="lead mt-3">
@@ -54,11 +57,13 @@
     </div>
 
 
+    <!-- Section des cartes de fonctionnalités -->
     <div class="container mt-5">
         <div class="row text-center">
             <div class="col-md-4">
                 <div class="card shadow-sm h-100">
                     <div class="card-body">
+                        <!-- Carte pour explorer les défis -->
                         <h5 class="card-title">Explorez les Défis</h5>
                         <p class="card-text">Découvrez des tâches simples mais impactantes pour protéger l'environnement.</p>
                         <a href="/Challenges" class="btn btn-success">Voir les Défis</a>
@@ -68,6 +73,7 @@
             <div class="col-md-4">
                 <div class="card shadow-sm h-100">
                     <div class="card-body">
+                        <!-- Carte pour suivre les progrès -->
                         <h5 class="card-title">Suivez vos Progrès</h5>
                         <p class="card-text">Marquez les défis comme terminés et voyez comment vous contribuez à un avenir durable.</p>
                         <a href="/Progres" class="btn btn-primary">Commencez à Suivre</a>
@@ -77,6 +83,7 @@
             <div class="col-md-4">
                 <div class="card shadow-sm h-100">
                     <div class="card-body">
+                        <!-- Carte pour voir le classement -->
                         <h5 class="card-title">Classement</h5>
                         <p class="card-text">Découvrez votre position parmi les autres éco-acteurs et visez la première place !</p>
                         <a href="/Classement" class="btn btn-warning">Voir le Classement</a>
@@ -86,6 +93,7 @@
         </div>
     </div>
 
+    <!-- Scripts JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
