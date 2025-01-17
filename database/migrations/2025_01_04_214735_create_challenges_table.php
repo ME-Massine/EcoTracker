@@ -7,24 +7,26 @@ use Illuminate\Support\Facades\Schema;
 return new class extends Migration
 {
     /**
-     * Run the migrations.
+     * Exécute les migrations.
      */
     public function up(): void
     {
+        // Crée la table 'challenges'
         Schema::create('challenges', function (Blueprint $table) {
-            $table->id();
-            $table->string('title');
-            $table->string('description');
-            $table->integer('points');
-            $table->timestamps();
+            $table->id(); // Colonne ID auto-incrémentée
+            $table->string('title'); // Colonne pour le titre du challenge
+            $table->string('description'); // Colonne pour la description du challenge
+            $table->integer('points'); // Colonne pour les points du challenge
+            $table->timestamps(); // Colonnes pour les timestamps created_at et updated_at
         });
     }
 
     /**
-     * Reverse the migrations.
+     * Annule les migrations.
      */
     public function down(): void
     {
+        // Supprime la table 'challenges' si elle existe
         Schema::dropIfExists('challenges');
     }
 };

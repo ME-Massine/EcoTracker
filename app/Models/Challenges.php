@@ -6,11 +6,11 @@ use Illuminate\Database\Eloquent\Model;
 
 class Challenges extends Model
 {
+    protected $fillable = ['title', 'description', 'points']; // les champs qui peuvent etre remplis
 
-    protected $fillable = ['title', 'description', 'points'];
-
-    public function Users()
+    public function users()
     {
-        return $this->belongsToMany(Users::class, 'user__challenges')->withPivot('status');
+        return $this->belongsToMany(Users::class, 'user_challenges')->withPivot('status');
+        // relation entre les challenges et les utilisateurs
     }
 }
